@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option go_package = "hello-proto/protogen/basic";
+
+message UserContent {
+  uint32 user_content_id = 1 [json_name="user_content_id"];
+  uint32 author_id = 2 [json_name="author_id"];
+  string title = 3;
+  string slug = 4;
+  string html_content = 5 [json_name="html_content"];
+}
